@@ -72,6 +72,15 @@ h2{
     color: #FF7710;
 }
 
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    padding-top: 10px;
+    color: #FF7710;
+    padding-bottom: 10px;
+}
+
 p{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -82,31 +91,32 @@ strong {
     color: #FF7710;
 }
 
+/* hobby 스타일 */
 
-
-.about__wrapper{
-    display: flex;
-    flex-direction: column;
+#hobbies-title{
     padding: 20px;
 }
 
-.about__wrapper_top{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
+.hobbies-section{
+    margin: 50px;
+
 }
 
-.about__wrapper_bottom{
+.hobbies__wrapper{
     width: 100%;
-    height: 100%;
-    margin-top: 20px;
+    height: 400px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 0px 30px;
 }
 
-.about__wrapper_left {
+.hobby__item{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.hobby__image{
     width: 400px;
     height: 400px;
     flex-shrink: 0;
@@ -114,51 +124,11 @@ strong {
     overflow: hidden; /* 넘치는 부분 숨김 */
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     display: flex; /* 이미지를 중앙 정렬하기 위해 flex 사용 */
-    justify-content: center; /* 가로 방향 중앙 정렬 */
-    align-items: center; /* 세로 방향 중앙 정렬 */
-}
+} 
 
-.myImage {
+.hobby__image img{
     width: 100%; /* 컨테이너 너비에 맞춤 */
     height: 100%; /* 컨테이너 높이에 맞춤 */
     object-fit: cover; /* 이미지 비율을 유지하면서 컨테이너를 가득 채움 */
     object-position: center; /* 이미지를 중앙에 위치시킴 */
-}
-
-.about__wrapper_right{
-    width: 522px;
-    height: 426px;
-    flex-shrink: 0;    
-    background-color: #EBEBEB;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 20px 50px 0px 100px;
-    padding: 20px;
-    
-}
-
-.background {
-    height: 170px;
-    font-size: 14px;
-    letter-spacing: 0.2px; /* 자간을 1픽셀만큼 늘림 */
-    text-align: center; /* 텍스트를 중앙 정렬 */
-    background-image: url("../images/background.png");
-    background-size: cover;
-    background-position: center;
-    padding: 30px;
-}
-
-.profile{
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(135deg, #FF7710 20%, #FFC300 50%);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
 }
